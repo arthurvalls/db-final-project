@@ -47,10 +47,11 @@ pip3 install flask
 
 ## Usage
 
+
 ```
 python3 app.py
 ```
 
-By default, the application will be accessible at http://localhost:5000/.
+By default, the application will be accessible at http://localhost:5000/ .
 
 Open your web browser and visit http://localhost:5000/ to access the database web app.
