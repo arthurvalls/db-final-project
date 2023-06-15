@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request
 import csv
+import requests
 
 app = Flask(__name__)
 
@@ -11,7 +12,6 @@ def load_pokemon_data():
         for row in reader:
             pokemon_data.append(row)
     return pokemon_data
-import requests
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
