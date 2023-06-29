@@ -4,7 +4,11 @@ import { pokemonData } from '../../services/PokemonServices';
 const Pokemon = (Props : pokemonData) => {
 
     return (
-        <div>{Props.Name}</div>
+        <>
+        {/* <div style={{ backgroundImage: `url('/articleImages/${imageName}')` }}></div> */}
+        <img src={`/pokemonSprites/${Props.imagePath}`}></img>
+        <div>{Props.name}</div>
+        </>
     );
 };
 

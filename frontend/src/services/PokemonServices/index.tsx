@@ -1,19 +1,15 @@
 import api from "../api";
 
 export type pokemonData = {
-    ID: number,
-    Name : string,
-    Type1 : string,
-    Type2 : string,
-    Total : number,
-    HP : number,
-    Attack : number,
-    Defense : number,
-    SpAtk : number,
-    SpDef : number,
-    Speed : number,
-    Generation : number,
-    Legendary : string
+    id: number,
+    name : string,
+    healthPoints : number,
+    attack : number,
+    defense : number,
+    spAtk : number,
+    spDef : number,
+    speed : number,
+    imagePath : string,
 };
 
 export default {
