@@ -1,0 +1,29 @@
+.PokemonCard {
+    display: flex;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin: 10px ;
+}
+
+.PokemonInfo {
+    width: 70%;
+}
+
+.PokemonPhoto {
+    height: auto;
+    width: 30%;
+}
+
+.PokemonName {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.PokemonStats {
+    display: flex;
+    width: 100%;
+}
+
+.Stat {
+
+}

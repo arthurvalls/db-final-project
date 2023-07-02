@@ -1,14 +1,22 @@
 const db = require('./db.service');
 
-async function index () {
+async function findAll () {
     
-  const result = await db.query('SELECT * FROM Pokemon');
+  const result = await db.query('SELECT * FROM Pokemon;');
+
+  return {result};
+};
+
+async function findByPk (id) {
+    
+  const result = await db.query('SELECT * FROM Pokemon WHERE id = ?;', [id]);
 
   return {result};
 };
 
 module.exports = {
-  index,
+  findAll,
+  findByPk,
 };
 
 /* async function getMultiple(page = 1){
