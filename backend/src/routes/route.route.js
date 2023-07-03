@@ -9,5 +9,6 @@ router.get('/pokemon/:id', PokemonController.show);
 
 // PokemonType
 router.get('/pokemonType/:id', PokemonTypeController.showRelationsPokemonType);
+router.get('/pokemonTypeAvg', PokemonTypeController.getAverageStats);
 
 module.exports = router;

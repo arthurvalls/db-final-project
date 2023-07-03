@@ -38,7 +38,7 @@ INSERT INTO Evolution VALUES (52, 53, 'level-up');
 INSERT INTO Evolution VALUES (52, 863, 'level-up');
 INSERT INTO Evolution VALUES (58, 59, 'use-item');
 INSERT INTO Evolution VALUES (56, 57, 'level-up');
-INSERT INTO Evolution VALUES (57, 979, 'other');
+/* INSERT INTO Evolution VALUES (57, 979, 'other'); */
 INSERT INTO Evolution VALUES (60, 61, 'level-up');
 INSERT INTO Evolution VALUES (61, 62, 'use-item');
 INSERT INTO Evolution VALUES (61, 186, 'trade');
@@ -133,14 +133,14 @@ INSERT INTO Evolution VALUES (188, 189, 'level-up');
 INSERT INTO Evolution VALUES (190, 424, 'level-up');
 INSERT INTO Evolution VALUES (193, 469, 'level-up');
 INSERT INTO Evolution VALUES (194, 195, 'level-up');
-INSERT INTO Evolution VALUES (194, 980, 'level-up');
+/* INSERT INTO Evolution VALUES (194, 980, 'level-up'); */
 INSERT INTO Evolution VALUES (198, 430, 'use-item');
 INSERT INTO Evolution VALUES (200, 429, 'use-item');
 INSERT INTO Evolution VALUES (360, 202, 'level-up');
 INSERT INTO Evolution VALUES (204, 205, 'level-up');
-INSERT INTO Evolution VALUES (203, 981, 'level-up');
+/* INSERT INTO Evolution VALUES (203, 981, 'level-up'); */
 INSERT INTO Evolution VALUES (207, 472, 'level-up');
-INSERT INTO Evolution VALUES (206, 982, 'level-up');
+/* INSERT INTO Evolution VALUES (206, 982, 'level-up'); */
 INSERT INTO Evolution VALUES (209, 210, 'level-up');
 INSERT INTO Evolution VALUES (211, 904, 'strong-style-move');
 INSERT INTO Evolution VALUES (215, 461, 'level-up');
@@ -328,7 +328,7 @@ INSERT INTO Evolution VALUES (613, 614, 'level-up');
 INSERT INTO Evolution VALUES (616, 617, 'trade');
 INSERT INTO Evolution VALUES (619, 620, 'level-up');
 INSERT INTO Evolution VALUES (624, 625, 'level-up');
-INSERT INTO Evolution VALUES (625, 983, 'other');
+/* INSERT INTO Evolution VALUES (625, 983, 'other'); */
 INSERT INTO Evolution VALUES (622, 623, 'level-up');
 INSERT INTO Evolution VALUES (629, 630, 'level-up');
 INSERT INTO Evolution VALUES (627, 628, 'level-up');
@@ -436,6 +436,7 @@ INSERT INTO Evolution VALUES (878, 879, 'level-up');
 INSERT INTO Evolution VALUES (885, 886, 'level-up');
 INSERT INTO Evolution VALUES (886, 887, 'level-up');
 INSERT INTO Evolution VALUES (891, 892, 'tower-of-darkness');
+/*
 INSERT INTO Evolution VALUES (906, 907, 'level-up');
 INSERT INTO Evolution VALUES (907, 908, 'level-up');
 INSERT INTO Evolution VALUES (909, 910, 'level-up');
@@ -475,3 +476,4 @@ INSERT INTO Evolution VALUES (971, 972, 'level-up');
 INSERT INTO Evolution VALUES (996, 997, 'level-up');
 INSERT INTO Evolution VALUES (997, 998, 'level-up');
 INSERT INTO Evolution VALUES (999, 1000, 'other');
+*/

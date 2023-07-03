@@ -1,0 +1,9 @@
+.paginationButtons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.paginationButton {
+    font-size: 2rem;
+}

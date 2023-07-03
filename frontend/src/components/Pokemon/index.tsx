@@ -1,17 +1,16 @@
 import React, { useEffect, useState } from 'react'
-import PokemonServices, { pokemonData, pokemonType } from '../../services/PokemonServices';
+import PokemonServices from '../../services/PokemonServices';
+import { pokemonData, pokemonTypeData } from '../../utils';
 import './style.css'
 
 function Pokemon (Props : pokemonData) {
 
-    const[types, setTypes] = useState<pokemonType[]>();
+    const[types, setTypes] = useState<pokemonTypeData[]>();
     useEffect(() => {
         PokemonServices.fetchPokemonTypesByPk(Props.id).then(response => {
         setTypes(response?.data.type.result);
         });
     }, []);
-
-    console.log(types)
 
     return (
         <div className='PokemonCard'>

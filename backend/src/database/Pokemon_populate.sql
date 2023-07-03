@@ -903,6 +903,7 @@ INSERT INTO Pokemon (name, healthPoints, attack, defense, spAttack, spDefense, s
 INSERT INTO Pokemon (name, healthPoints, attack, defense, spAttack, spDefense, speed, imagePath) VALUES ('Sneasler', 80, 130, 60, 40, 80, 120, './903.png');
 INSERT INTO Pokemon (name, healthPoints, attack, defense, spAttack, spDefense, speed, imagePath) VALUES ('Overqwil', 85, 115, 95, 65, 65, 85, './904.png');
 INSERT INTO Pokemon (name, healthPoints, attack, defense, spAttack, spDefense, speed, imagePath) VALUES ('Enamorus Incarnate', 74, 115, 70, 135, 80, 106, './905.png');
+/*
 INSERT INTO Pokemon (name, healthPoints, attack, defense, spAttack, spDefense, speed, imagePath) VALUES ('Sprigatito', 40, 61, 54, 45, 45, 65, './906.png');
 INSERT INTO Pokemon (name, healthPoints, attack, defense, spAttack, spDefense, speed, imagePath) VALUES ('Floragato', 61, 80, 63, 60, 63, 83, './907.png');
 INSERT INTO Pokemon (name, healthPoints, attack, defense, spAttack, spDefense, speed, imagePath) VALUES ('Meowscarada', 76, 110, 70, 81, 70, 123, './908.png');
@@ -1279,3 +1280,4 @@ INSERT INTO Pokemon (name, healthPoints, attack, defense, spAttack, spDefense, s
 INSERT INTO Pokemon (name, healthPoints, attack, defense, spAttack, spDefense, speed, imagePath) VALUES ('Miraidon Drive Mode', 100, 85, 100, 135, 115, 135, './1279.png');
 INSERT INTO Pokemon (name, healthPoints, attack, defense, spAttack, spDefense, speed, imagePath) VALUES ('Miraidon Aquatic Mode', 100, 85, 100, 135, 115, 135, './1280.png');
 INSERT INTO Pokemon (name, healthPoints, attack, defense, spAttack, spDefense, speed, imagePath) VALUES ('Miraidon Glide Mode', 100, 85, 100, 135, 115, 135, './1281.png');
+*/

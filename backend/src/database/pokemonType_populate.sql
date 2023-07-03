@@ -1352,6 +1352,7 @@ INSERT INTO PokemonType (pokemonId, typeName) VALUES ('904', 'Dark');
 INSERT INTO PokemonType (pokemonId, typeName) VALUES ('904', 'Poison');
 INSERT INTO PokemonType (pokemonId, typeName) VALUES ('905', 'Fairy');
 INSERT INTO PokemonType (pokemonId, typeName) VALUES ('905', 'Flying');
+/*
 INSERT INTO PokemonType (pokemonId, typeName) VALUES ('906', 'Grass');
 INSERT INTO PokemonType (pokemonId, typeName) VALUES ('907', 'Grass');
 INSERT INTO PokemonType (pokemonId, typeName) VALUES ('908', 'Grass');
@@ -1501,3 +1502,4 @@ INSERT INTO PokemonType (pokemonId, typeName) VALUES ('998', 'Ice');
 INSERT INTO PokemonType (pokemonId, typeName) VALUES ('999', 'Ghost');
 INSERT INTO PokemonType (pokemonId, typeName) VALUES ('1000', 'Steel');
 INSERT INTO PokemonType (pokemonId, typeName) VALUES ('1000', 'Ghost');
+*/

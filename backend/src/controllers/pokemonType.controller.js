@@ -11,6 +11,18 @@ const showRelationsPokemonType = async (req, res) => {
     }
 };
 
+const getAverageStats = async (req, res) => {
+    try{
+      const pokemon = await PokemonType.fetchStatsAverages();
+      
+      return res.status(200).json({pokemon});
+    } catch(err){
+        console.log(err)
+        res.status(500).json({error: err});
+    }
+};
+
 module.exports = {
     showRelationsPokemonType,
+    getAverageStats,
 };
