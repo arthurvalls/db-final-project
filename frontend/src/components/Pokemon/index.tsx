@@ -24,14 +24,14 @@ function Pokemon (Props : pokemonData) {
                 {types?.map((type) => {return (<><img width='50' src={`/images/pokemonTypes/${type.logo}`}></img></>)})}
                 <div className='PokemonStats'>
                     <div className='PokemonStats1'>
-                        <div className='Stat'>HP  : {Props.healthPoints}</div>
-                        <div className='Stat'>Atk : {Props.attack}</div>
-                        <div className='Stat'>Def : {Props.defense}</div>
+                        <b>HP  </b><div className='Stat'>{Props.healthPoints}</div>
+                        <b>Atk </b><div className='Stat'>{Props.attack}</div>
+                        <b>Def </b><div className='Stat'>{Props.defense}</div>
                     </div>
                     <div className='PokemonStats2'>
-                        <div className='Stat'>Speed : {Props.speed}</div>
-                        <div className='Stat'>sp.Atk : {Props.spAttack}</div>
-                        <div className='Stat'>sp.Def : {Props.spDefense}</div>
+                        <b>Speed  </b><div className='Stat'>{Props.speed}</div>
+                        <b>sp.Atk </b><div className='Stat'>{Props.spAttack}</div>
+                        <b>sp.Def </b><div className='Stat'>{Props.spDefense}</div>
                     </div>
                 </div>
             </div>
@@ -39,5 +39,4 @@ function Pokemon (Props : pokemonData) {
     );
 };
 
-/* <div style={{ backgroundImage: `url('/articleImages/${imageName}')` }}></div> */
 export default Pokemon;

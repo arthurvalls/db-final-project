@@ -1,4 +1,5 @@
 import React from "react";
+import './style.css'
 import { useHandleSearch } from "../../contexts/search";
 
 function SearchBar () {
@@ -6,7 +7,9 @@ function SearchBar () {
     const search = useHandleSearch();
 
     return (
-        <input placeholder="Procure Pokemon" onChange={(event) => search(event)}></input>
+        <div className="searchContainer">
+            <input placeholder="Procure Pokemon" onChange={(event) => search(event)} className='searchBar'></input>
+        </div>
     )
 };
 

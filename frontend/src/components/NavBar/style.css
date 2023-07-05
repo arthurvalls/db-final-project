@@ -1,13 +1,52 @@
 .navBar {
-    width: 100%;
+    width: 100vw;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    background-color: #2a75bb;
+    align-items: center;
+}
+
+.logo {
+    @media only screen and (max-width: 387px) {
+        width: 100vw;
+    }
+}
+
+.links {
+    width: 100%;
+    @media only screen and (max-width: 387px) {
+        width: 100vw;
+    }
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .link {
-    color: black;
+    color: #3c5aa6;
+    width: 33%;
+    text-align: center;
+    font-weight: 900;
+    background-color: #ffcb05;
+    border: 2px solid #3c5aa6;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 5vw;
+    padding: 2vw 0 2vw 0;
+    @media only screen and (min-width: 387px) {
+        font-size: 4vw;
+        padding: 2vw 0 2vw 0;
+    }
+    @media only screen and (min-width: 500px) {
+        font-size: 3.8vw;
+        padding: 2vw 0 2vw 0;
+    }
+    @media only screen and (min-width: 700px) {
+        font-size: 1.7rem;
+        padding: 1.7vw 0 1.7vw 0;
+    }
+    @media only screen and (min-width: 1000px) {
+        font-size: 1.7rem;
+        padding: 1.5vw 0 1.5vw 0;
+    }
 }
 
 .link:link, link:visited{
@@ -15,9 +54,5 @@
 }
 
 .link:hover {
-    opacity: 50%;
-}
-
-.link:active {
-    color: blue;
+    opacity: 80%;
 }

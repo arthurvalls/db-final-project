@@ -1,0 +1,8 @@
+.advancedSearchForm {
+    display: flex;
+}
+
+.formContainer {
+    background-color: black;
+    width: 50%;
+}

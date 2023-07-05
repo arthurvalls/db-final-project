@@ -1,9 +1,9 @@
 import React from 'react';
-/* import Router from './Router'; */
 import './App.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { SearchProvider } from './contexts/search';
 import PokemonList from './pages/ListPokemon';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import AdvancedSearch from './pages/AdvancedSearch';
 import StatsPage from './pages/Stats';
 
 function App() {
@@ -12,6 +12,7 @@ function App() {
     <BrowserRouter>
       <Routes>
           <Route path ='/' element={<PokemonList/>}/>
+          <Route path ='advanced' element={<AdvancedSearch/>}/>
           <Route path ='stats' element={<StatsPage/>}/>
       </Routes>
     </BrowserRouter>

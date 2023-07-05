@@ -1,0 +1,15 @@
+.searchContainer{
+    margin: 2% 0px 2% 0px;
+    width: 100%;
+    display: flex;
+}
+
+.searchBar {
+    @media only screen and (max-width: 700px) {
+        width: 90%;
+    }
+    width: 700px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 8px;
+}

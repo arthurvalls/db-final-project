@@ -42,25 +42,24 @@ function PokemonList() {
         <>
         <NavBar></NavBar>
         <SearchBar/>
-        <div className='paginationButtons'>
-        <button onClick={anterior} disabled={page == 1} className='paginationButton'>Anterior</button>
-            <button onClick={proxima} disabled={page == 20} className='paginationButton'>Próximo</button>
+        <div className='pokemonContainer'>
+            {searchedPokemons?.slice(30*(page - 1), 30*(page - 1) + 30).map((pokemon) => {
+                return (
+                    <div className='pokemon'>
+                        <Pokemon
+                            key={pokemon.id}
+                            id={pokemon.id}
+                            name={pokemon.name}
+                            healthPoints={pokemon.healthPoints}
+                            attack={pokemon.attack}
+                            defense={pokemon.defense}
+                            spAttack={pokemon.spAttack}
+                            spDefense={pokemon.spDefense}
+                            speed={pokemon.speed}
+                            imagePath={pokemon.imagePath}/>
+                    </div>
+            )})}
         </div>
-        {searchedPokemons?.slice(10*(page - 1), 10*(page - 1) + 10).map((pokemon) => {
-            return (
-                <Pokemon
-                    key={pokemon.id}
-                    id={pokemon.id}
-                    name={pokemon.name}
-                    healthPoints={pokemon.healthPoints}
-                    attack={pokemon.attack}
-                    defense={pokemon.defense}
-                    spAttack={pokemon.spAttack}
-                    spDefense={pokemon.spDefense}
-                    speed={pokemon.speed}
-                    imagePath={pokemon.imagePath}/>
-                    )
-        })}
         <div className='paginationButtons'>
             <button onClick={anterior} disabled={page == 1} className='paginationButton'>Anterior</button>
             <button onClick={proxima} disabled={page == 20} className='paginationButton'>Próximo</button>
