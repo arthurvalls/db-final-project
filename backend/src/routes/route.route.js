@@ -8,6 +8,7 @@ router.get('/pokemon', PokemonController.index);
 router.get('/pokemon/:id', PokemonController.show);
 
 // PokemonType
+router.get('/pokemonType', PokemonTypeController.indexRelationsPokemonType);
 router.get('/pokemonType/:id', PokemonTypeController.showRelationsPokemonType);
 router.get('/pokemonTypeAvg', PokemonTypeController.getAverageStats);
 

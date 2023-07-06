@@ -6,11 +6,13 @@ import './style.css'
 function Pokemon (Props : pokemonData) {
 
     const[types, setTypes] = useState<pokemonTypeData[]>();
-    useEffect(() => {
+/*     useEffect(() => {
         PokemonServices.fetchPokemonTypesByPk(Props.id).then(response => {
         setTypes(response?.data.type.result);
         });
-    }, []);
+    }, []); */
+
+    const logo = Props.logo;
 
     return (
         <div className='PokemonCard'>
@@ -21,7 +23,7 @@ function Pokemon (Props : pokemonData) {
                 <div className='PokemonName'>
                     <div>{Props.name}</div>
                 </div>
-                {types?.map((type) => {return (<><img width='50' src={`/images/pokemonTypes/${type.logo}`}></img></>)})}
+                {Props.logo?.map((logo) => {return (<img key={logo['logo']} width='50' src={`/images/pokemonTypes/${logo['logo']}`}></img>)})}
                 <div className='PokemonStats'>
                     <div className='PokemonStats1'>
                         <b>HP  </b><div className='Stat'>{Props.healthPoints}</div>

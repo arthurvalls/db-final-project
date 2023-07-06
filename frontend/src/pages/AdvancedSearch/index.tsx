@@ -3,7 +3,6 @@ import NavBar from "../../components/NavBar"
 import './style.css'
 
 type pokemonSearchData = {
-  name : string,
   type : string,
   minHealthPoints : number,
   minAttack : number,
@@ -23,7 +22,7 @@ function AdvancedSearch() {
   
   const onSubmit: SubmitHandler<pokemonSearchData> = (data) => console.log(data);
 
-  console.log(watch("name")) // watch input value by passing the name of it
+  console.log(watch()) // watch input value by passing the name of it
 
   return (
     <div>
@@ -32,7 +31,6 @@ function AdvancedSearch() {
         <div className="formContainer">
             <form onSubmit={handleSubmit(onSubmit)} className='advancedSearchForm'>
                 {/* register your input into the hook by invoking the "register" function */}
-                <input placeholder="Nome" {...register("name")} />
                 <input placeholder="Mínimo de vida" {...register("minHealthPoints")} />
                 <input placeholder="Mínimo de attack" {...register("minAttack")} />
                 <input placeholder="Mínimo de defense" {...register("minDefense")} />

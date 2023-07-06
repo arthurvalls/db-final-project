@@ -6,17 +6,22 @@ import SearchBar from '../../components/SearchBar';
 import { useSearchValue } from '../../contexts/search';
 import NavBar from '../../components/NavBar';
 import './style.css'
-import { pokemonData } from '../../utils';
+import { pokemonData, pokemonTypeData } from '../../utils';
 
 function PokemonList() {
   
     const[pokemons, setPokemons] = useState<pokemonData[]>();
+    const[types, setTypes] = useState<pokemonTypeData[]>();
     const[page, setPage] = useState<number>(1);
 
     useEffect(() => {
         PokemonServices.fetchAllPokemons().then(response => {
         setPokemons(response?.data.pokemon.result);
+        PokemonServices.fetchAllPokemonTypes().then(response => {
+            setTypes(response?.data.type.result);
+            });
         });
+
     }, []);
     
     function anterior () {setPage(page - 1)};
@@ -36,7 +41,7 @@ function PokemonList() {
             return searchedPokemons?.length % 20
         }
     }
-    console.log(size(searchedPokemons))
+    /* console.log(size(searchedPokemons)) */
 
     return (
         <>
@@ -44,10 +49,12 @@ function PokemonList() {
         <SearchBar/>
         <div className='pokemonContainer'>
             {searchedPokemons?.slice(30*(page - 1), 30*(page - 1) + 30).map((pokemon) => {
+
+                if (types != undefined) {
+                
                 return (
-                    <div className='pokemon'>
+                    <div key={pokemon.id} className='pokemon'>
                         <Pokemon
-                            key={pokemon.id}
                             id={pokemon.id}
                             name={pokemon.name}
                             healthPoints={pokemon.healthPoints}
@@ -56,9 +63,12 @@ function PokemonList() {
                             spAttack={pokemon.spAttack}
                             spDefense={pokemon.spDefense}
                             speed={pokemon.speed}
-                            imagePath={pokemon.imagePath}/>
+                            imagePath={pokemon.imagePath}
+                            logo={types?.filter(type => type.id == pokemon.id)}/>
                     </div>
-            )})}
+            )
+        }
+        })}
         </div>
         <div className='paginationButtons'>
             <button onClick={anterior} disabled={page == 1} className='paginationButton'>Anterior</button>

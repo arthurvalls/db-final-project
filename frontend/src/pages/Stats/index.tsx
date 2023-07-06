@@ -27,7 +27,7 @@ function StatsPage () {
             setPokemonsAvg(response?.data.pokemon.result)
         });
     }, []);
-    console.log(pokemonsAvg)
+    /* console.log(pokemonsAvg) */
 
     useEffect(() => {
         if (pokemonsAvg != undefined) {

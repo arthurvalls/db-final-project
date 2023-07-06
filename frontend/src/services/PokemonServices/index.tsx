@@ -20,6 +20,15 @@ export default {
         };
     },
 
+    async fetchAllPokemonTypes () {
+        try {
+            const response = api.get(`/router/pokemonType/`);
+            return response;
+        } catch (e) {
+            console.log(e);
+        };
+    },
+
     async fetchPokemonAverages () {
         try {
             const response = api.get('/router/pokemonTypeAvg');

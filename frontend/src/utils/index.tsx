@@ -10,9 +10,11 @@ export type pokemonData = {
     spDefense : number,
     speed : number,
     imagePath : string,
+    logo: pokemonTypeData[],
 };
 
 export type pokemonTypeData = {
+    id : number,
     logo : string,
 };
 
