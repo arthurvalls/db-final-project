@@ -7,6 +7,7 @@ import { useSearchValue } from '../../contexts/search';
 import NavBar from '../../components/NavBar';
 import './style.css'
 import { pokemonData, pokemonTypeData } from '../../utils';
+import { useNavigate } from "react-router-dom";
 
 function PokemonList() {
   

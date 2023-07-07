@@ -1,0 +1,20 @@
+.pokemonContainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.title {
+    text-align: center;
+}
+
+.moveContainer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin: auto;
+}
+
+.center {
+    margin: auto;
+}

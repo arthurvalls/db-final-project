@@ -5,6 +5,7 @@ import { SearchProvider } from './contexts/search';
 import PokemonList from './pages/ListPokemon';
 import AdvancedSearch from './pages/AdvancedSearch';
 import StatsPage from './pages/Stats';
+import PokemonInfo from './pages/PokemonInfo';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path ='/' element={<PokemonList/>}/>
           <Route path ='advanced' element={<AdvancedSearch/>}/>
           <Route path ='stats' element={<StatsPage/>}/>
+          <Route path='pokemon/:id' element={<PokemonInfo/>}/>
       </Routes>
     </BrowserRouter>
   </SearchProvider>    

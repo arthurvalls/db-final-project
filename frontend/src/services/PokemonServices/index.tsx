@@ -11,9 +11,9 @@ export default {
         };
     },
 
-    async fetchPokemonTypesByPk (id : number) {
+    async fetchPokemonByPk(id : number) {
         try {
-            const response = api.get(`/router/pokemonType/${id}`);
+            const response = api.get(`/router/pokemon/${id}`);
             return response;
         } catch (e) {
             console.log(e);
@@ -29,9 +29,36 @@ export default {
         };
     },
 
+    async fetchPokemonTypesByPk (id : number) {
+        try {
+            const response = api.get(`/router/pokemonType/${id}`);
+            return response;
+        } catch (e) {
+            console.log(e);
+        };
+    },
+
     async fetchPokemonAverages () {
         try {
             const response = api.get('/router/pokemonTypeAvg');
+            return response;
+        } catch (e) {
+            console.log(e);
+        };
+    },
+
+    async fetchPokemonEvolutionByPk (id : number) {
+        try {
+            const response = api.get(`/router/evolution/${id}`);
+            return response;
+        } catch (e) {
+            console.log(e);
+        };
+    },
+
+    async fetchAllPokemonMovesByPk (id : number) {
+        try {
+            const response = api.get(`/router/pokemonMove/${id}`);
             return response;
         } catch (e) {
             console.log(e);

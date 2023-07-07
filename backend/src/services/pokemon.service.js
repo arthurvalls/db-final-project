@@ -14,9 +14,19 @@ async function findByPk (id) {
   return {result};
 };
 
+async function findByAttributes (request) {
+  
+  const query = 'SELECT * FROM Pokemon NATURAL JOIN (SELECT pokemonId AS id, typeName FROM PokemonType) AS PokemonType WHERE typeName = \'?\''
+  query = query + ';'
+  const result = await db.query(query, [typeName]);
+
+  return {result};
+};
+
 module.exports = {
   findAll,
   findByPk,
+  findByAttributes
 };
 
 /* async function getMultiple(page = 1){

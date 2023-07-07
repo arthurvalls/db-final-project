@@ -27,3 +27,23 @@ export type pokemonAvgData = {
     avgspDefense : number,
     avgSpeed : number,
 };
+
+export type chartData = {
+    labels : string[],
+    datasets : [
+        {
+            label : string,
+            data : number[],
+        }
+    ]
+};
+
+export type moveData = {
+    id : number,
+    name : string,
+    category : string,
+    typeName : string,
+    powerPoints : string,
+    power : number,
+    accuracy : number,
+};
