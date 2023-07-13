@@ -67,37 +67,4 @@ CREATE TABLE PokemonAbility (
     FOREIGN KEY (pokemonId) REFERENCES Pokemon(id),
     FOREIGN KEY (abilityName) REFERENCES Ability(name)
 );
-
-/* CREATE TABLE Game (
-    name VARCHAR(255),
-    releaseDate DATE,
-    generation TINYINT,
-    region VARCHAR(255),
-    PRIMARY KEY (name)
-);
-
-CREATE TABLE PokemonGame (
-    pokemonId INT,
-    gameName INT,
-    PRIMARY KEY (pokemonId, gameName),
-    FOREIGN KEY (pokemonId) REFERENCES Pokemon(id),
-    FOREIGN KEY (gameName) REFERENCES Game(name)
-);
-
-CREATE TABLE GymLeader (
-    id INT AUTO_INCREMENT,
-    name VARCHAR(255),
-    gymName VARCHAR(255),
-
-); ALTER TABLE GymLeaders AUTO_INCREMENT = 1;
-
-CREATE TABLE PokemonGymLeader (
-    pokemonId INT,
-    gymLeaderId INT,
-    PRIMARY KEY (pokemonId, gymLeaderId),
-    FOREIGN KEY (pokemonId) REFERENCES Pokemon(id),
-    FOREIGN KEY (gymLeaderId) REFERENCES GymLeader(id)
-);
-
- */
  
