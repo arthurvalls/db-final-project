@@ -1,0 +1,30 @@
+.navBar {
+    background-color: #3c5aa6;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    width: auto;
+    height: 40px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.links {
+    margin-left: auto;
+}
+
+.link {
+    color: #ffcb05;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.link:hover {
+    color: #ac8a01;
+}

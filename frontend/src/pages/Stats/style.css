@@ -1,0 +1,13 @@
+.stats{
+    width: 100%;
+}
+.barCharts{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.barChart{
+    margin-bottom: 50px;
+}
